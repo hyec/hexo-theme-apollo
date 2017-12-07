@@ -17,8 +17,8 @@
 hexo init Blog 
 cd Blog 
 npm install
-npm install --save hexo-renderer-jade hexo-generator-feed hexo-generator-sitemap hexo-browsersync hexo-generator-archive
-git clone https://github.com/pinggod/hexo-theme-apollo.git themes/apollo
+npm install --save hexo-renderer-jade hexo-renderer-scss hexo-generator-feed  hexo-generator-archive
+git clone https://github.com/hyec/hexo-theme-apollo.git themes/apollo
 ```
 
 ## 启用
@@ -27,6 +27,15 @@ git clone https://github.com/pinggod/hexo-theme-apollo.git themes/apollo
 
 ```yaml
 theme: apollo
+
+# 覆盖主题的设置
+theme_config:
+  livere:
+  # 如果存在menu，主题会优先使用
+  menu:
+    Blog: /
+    Archive: /archives/
+    Rss: /atom.xml
 
 # 在归档页面显示所有文章
 # 需要上面安装的 hexo-generator-archive 插件支持

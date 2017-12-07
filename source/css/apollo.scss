@@ -1,6 +1,15 @@
 @charset "utf-8";
 
 @import "_partial/normalize";
+
+@font-face {
+    font-family: 'sourcesanspro';
+    src: url('../font/sourcesanspro.woff2') format('woff2'),
+         url('../font/sourcesanspro.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
 @import "_partial/base";
 @import "_partial/header";
 @import "_partial/home-post-list";
@@ -10,10 +19,3 @@
 @import "_partial/mq";
 @import "_partial/copyright";
 
-@font-face {
-    font-family: 'sourcesanspro';
-    src: url('../font/sourcesanspro.woff2') format('woff2'),
-         url('../font/sourcesanspro.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
